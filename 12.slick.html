@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick</title>
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+
+    <style>
+        .container{
+            border:1px solid red;
+            width: 50%;
+            /* margin-left: auto; */
+            margin: auto;
+        }
+        .slick-prev:before, .slick-next:before{
+            color: red;
+        }
+
+        /* .slick-slide{
+            
+        } */
+
+        .slick-slide img{
+            width: 100%;
+            /* height: 100%; */
+            /* height: 300px; */
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="your-class">
+            <div>
+                <img src="./imgs/coffee1.jpg" alt="">
+            </div>
+            <div><img src="./imgs/coffee2.jpg" alt=""></div>
+            <div><img src="./imgs/coffee3.jpg" alt=""></div>
+            <div>
+                <img src="./imgs/coffee1.jpg" alt="">
+            </div>
+            <div><img src="./imgs/coffee2.jpg" alt=""></div>
+            <div><img src="./imgs/coffee3.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
+    <script src="./slick-1.8.1/slick/slick.min.js">
+
+    </script>
+    
+    <script>
+        $('.your-class').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: false
+
+});
+    </script>
+</body>
+
+</html>

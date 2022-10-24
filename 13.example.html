@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
 
     <style>
-        ul{
+        .nav ul{
             list-style: none;
             padding: 0 20px;
             background-color: lightblue;
         }
 
-        ul > li{
+        .nav ul > li{
             display: inline-block;
             line-height: 30px;
             margin-left: 20px;
@@ -82,10 +82,12 @@
 
         #product .left, #product .right{
             width: 50%;
+            /* height: 300px; */
             /* width: calc(50% - 4px); */
             min-height: 300px;
             /* display: inline-block; */
             border: 1px solid red;
+            padding: 50px;
         }
 
         #product .left img{
@@ -101,6 +103,40 @@
             background: lightgreen;
             border: none;
             padding: 10px;
+        }
+
+        footer{
+            background-color: #000;
+            display: flex;
+        }
+
+        footer > div{
+            width: 25%;
+            min-height: 200px;
+            border: 1px solid red;
+        }
+
+        footer a{
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        @media screen and (max-width:500px) {
+            .container{
+                width: 80%;
+            }
+
+            .card{
+                width: 100%;
+            }
+
+            #product{
+                flex-wrap: wrap;
+            }
+
+            #product .left, #product .right{
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -176,6 +212,21 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <li><a href="#">link4</a></li>
+                <li><a href="#">link5</a></li>
+            </ul>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
